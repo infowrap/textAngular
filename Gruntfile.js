@@ -108,6 +108,14 @@ module.exports = function (grunt) {
 			dist: {
 				src: ['lib/globals.js','lib/factories.js','lib/DOM.js','lib/validators.js','lib/taBind.js','lib/main.js'],
 				dest: 'src/textAngular.js'
+			},
+			taBind: {
+				src: ['lib/globals.js','lib/factories.js','lib/DOM.js','lib/taBind.js'],
+				dest: 'src/taBind.js'
+			},
+			taSlim: {
+				src: ['lib/validators.js','lib/main.js'],
+				dest: 'src/taSlim.js'
 			}
 		},
 		uglify: {
@@ -121,6 +129,8 @@ module.exports = function (grunt) {
 				files: {
 					'dist/textAngular-rangy.min.js': ['bower_components/rangy/rangy-core.js', 'bower_components/rangy/rangy-selectionsaverestore.js'],
 					'dist/textAngular.min.js': ['src/textAngularSetup.js','src/textAngular.js'],
+					'dist/taBind.min.js': ['src/taBind.js'],
+					'dist/taSlim.min.js': ['src/taSlim.js'],
 					'dist/textAngular-sanitize.min.js': ['src/textAngular-sanitize.js']
 				}
 			}
