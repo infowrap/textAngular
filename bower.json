@@ -1,6 +1,6 @@
 {
   "name": "textAngular",
-  "version": "infowrap1.3.13",
+  "version": "infowrap1.3.14",
   "main": [
     "./src/textAngular.js",
     "./src/textAngular-sanitize.js",
