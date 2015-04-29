@@ -532,7 +532,11 @@ function validStyles(styleAttr){
 				)
 			|| // Reference #520
 				(key === 'direction' && value.match(/^ltr|rtl|initial|inherit$/))
-			) result += key + ': ' + value + ';';
+			||
+        key === 'font-size'
+      ||
+        key === 'font-family'
+      ) result += key + ': ' + value + ';';
 		}
 	});
 	return result;
